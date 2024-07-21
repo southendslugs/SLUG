@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Southend Linux Users Group</title>
     <style>
         body {
-            font-family: "Montserrat", sans-serif;
+            font-family: Arial, sans-serif; /* Basic 90s font */
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc;
-            color: #333;
-            display: flex;
+            background: #f0f0f0;
+            color: #000;
         }
 
         .sidebar {
-            width: 250px;
-            background-color: #0057b7;
+            width: 200px;
+            background: #ff00ff; /* Bright color for 90s feel */
             color: #fff;
             position: fixed;
             top: 0;
             left: 0;
             bottom: 0;
+            border-right: 5px solid #000; /* Bold borders */
+            padding: 10px;
             overflow-y: auto;
-            padding: 1rem;
         }
 
         .sidebar h1 {
-            margin: 0;
             font-size: 1.5rem;
+            margin: 0;
+            color: #ffff00; /* Bright color */
         }
 
         .sidebar nav ul {
@@ -40,55 +38,65 @@
         }
 
         .sidebar nav ul li {
-            margin: 1rem 0;
+            margin: 10px 0;
         }
 
         .sidebar nav ul li a {
-            color: #fff;
+            color: #00ffff; /* Bright color */
             text-decoration: none;
             font-weight: bold;
+            border-bottom: 1px dotted #fff; /* Dotted underline */
+            padding: 2px;
+        }
+
+        .sidebar nav ul li a:hover {
+            color: #ff0000; /* Color change on hover */
         }
 
         .content {
-            margin-left: 250px;
-            width: calc(100% - 250px);
-            padding: 1rem;
+            margin-left: 210px; /* Adjusted for sidebar width and border */
+            padding: 10px;
         }
 
         .hero {
-            background: #e9ecef;
-            padding: 2rem;
+            background: #ffff00; /* Bright background color */
+            color: #000;
+            padding: 20px;
+            border: 5px solid #ff00ff; /* Border around sections */
             text-align: center;
         }
 
         .hero h1 {
             margin: 0;
-            font-size: 2.5rem;
-            color: #0057b7;
+            font-size: 2rem;
         }
 
         section {
-            padding: 2rem 0;
+            padding: 20px;
+            border: 3px solid #000;
+            margin-bottom: 20px;
+            background: #ffffff;
         }
 
         footer {
-            background-color: #0057b7;
+            background: #ff00ff; /* Bright color */
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 10px;
+            border-top: 3px solid #000;
         }
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
         }
 
         .project {
-            background: #e9ecef;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #e0e0e0;
+            padding: 10px;
+            border: 2px solid #000;
+            border-radius: 5px;
         }
 
         .project h3 {
@@ -96,18 +104,18 @@
         }
 
         .events-section {
-            background: #ffffff;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #c0c0c0;
+            padding: 10px;
+            border: 2px solid #000;
         }
 
         .event {
-            margin-bottom: 2rem;
+            margin-bottom: 10px;
         }
 
         .event h3 {
             margin: 0;
-            color: #0057b7;
+            color: #ff00ff; /* Bright color */
         }
 
         .event p {
@@ -135,18 +143,18 @@
 
     <div class="content">
         <section class="hero">
-            <div class="container">
+            <div>
                 <h1>Welcome to SLUG</h1>
                 <p>Promoting the use of Linux and open-source software in Southend-on-Sea and surrounding areas.</p>
             </div>
         </section>
 
-        <section id="about" class="container">
+        <section id="about">
             <h2>About Us</h2>
             <p>The Southend Linux Users Group (SLUG) is a community-driven organization dedicated to promoting the use of Linux and open-source software in Southend-on-Sea and the surrounding areas. We aim to provide a platform for learning, sharing, and connecting with like-minded individuals.</p>
         </section>
 
-        <section id="events" class="container events-section">
+        <section id="events" class="events-section">
             <h2>Events</h2>
             <div class="event">
                 <h3>Monthly Meetup</h3>
@@ -165,7 +173,7 @@
             </div>
         </section>
 
-        <section id="projects" class="container">
+        <section id="projects">
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project">
@@ -179,7 +187,7 @@
             </div>
         </section>
 
-        <section id="contact" class="container">
+        <section id="contact">
             <h2>Contact Us</h2>
             <p>Email: info@southendlug.org</p>
             <p>Follow us on <a href="https://twitter.com/SouthendLUG">Twitter</a> and <a href="https://facebook.com/SouthendLUG">Facebook</a>.</p>
