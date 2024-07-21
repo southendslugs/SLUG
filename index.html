@@ -6,22 +6,23 @@
     <title>Southend Linux Users Group</title>
     <style>
         body {
-            font-family: Arial, sans-serif; /* Basic 90s font */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
+            background-color: #f0f0f0;
             color: #000;
+            display: flex;
         }
 
         .sidebar {
             width: 200px;
-            background: #ff00ff; /* Bright color for 90s feel */
-            color: #fff;
+            background: #d0d0d0; /* Light gray for simplicity */
+            color: #000;
             position: fixed;
             top: 0;
             left: 0;
             bottom: 0;
-            border-right: 5px solid #000; /* Bold borders */
+            border-right: 1px solid #000; /* Thin border */
             padding: 10px;
             overflow-y: auto;
         }
@@ -29,7 +30,6 @@
         .sidebar h1 {
             font-size: 1.5rem;
             margin: 0;
-            color: #ffff00; /* Bright color */
         }
 
         .sidebar nav ul {
@@ -42,27 +42,26 @@
         }
 
         .sidebar nav ul li a {
-            color: #00ffff; /* Bright color */
+            color: #000;
             text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px dotted #fff; /* Dotted underline */
+            font-weight: normal;
             padding: 2px;
         }
 
         .sidebar nav ul li a:hover {
-            color: #ff0000; /* Color change on hover */
+            text-decoration: underline; /* Simple hover effect */
         }
 
         .content {
-            margin-left: 210px; /* Adjusted for sidebar width and border */
-            padding: 10px;
+            margin-left: 210px; /* Adjusted for sidebar width */
+            padding: 20px;
         }
 
         .hero {
-            background: #ffff00; /* Bright background color */
+            background: #ffffff; /* White background for simplicity */
             color: #000;
             padding: 20px;
-            border: 5px solid #ff00ff; /* Border around sections */
+            border: 1px solid #d0d0d0; /* Thin border */
             text-align: center;
         }
 
@@ -73,17 +72,17 @@
 
         section {
             padding: 20px;
-            border: 3px solid #000;
+            border: 1px solid #d0d0d0; /* Thin border */
             margin-bottom: 20px;
-            background: #ffffff;
+            background: #ffffff; /* White background */
         }
 
         footer {
-            background: #ff00ff; /* Bright color */
-            color: #fff;
+            background: #d0d0d0; /* Light gray background */
+            color: #000;
             text-align: center;
             padding: 10px;
-            border-top: 3px solid #000;
+            border-top: 1px solid #000; /* Thin border */
         }
 
         .project-grid {
@@ -93,9 +92,9 @@
         }
 
         .project {
-            background: #e0e0e0;
+            background: #ffffff; /* White background */
             padding: 10px;
-            border: 2px solid #000;
+            border: 1px solid #d0d0d0; /* Thin border */
             border-radius: 5px;
         }
 
@@ -104,9 +103,9 @@
         }
 
         .events-section {
-            background: #c0c0c0;
+            background: #ffffff; /* White background */
             padding: 10px;
-            border: 2px solid #000;
+            border: 1px solid #d0d0d0; /* Thin border */
         }
 
         .event {
@@ -115,7 +114,6 @@
 
         .event h3 {
             margin: 0;
-            color: #ff00ff; /* Bright color */
         }
 
         .event p {
