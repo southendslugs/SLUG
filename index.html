@@ -8,57 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Southend Linux Users Group</title>
     <style>
-
-      
-      
-        .montserrat-<uniquifier> {
-          font-family: "Montserrat", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: <weight>;
-          font-style: normal;
-        }
-
         body {
             font-family: "Montserrat", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f9fc;
             color: #333;
+            display: flex;
         }
 
-        header {
+        .sidebar {
+            width: 250px;
             background-color: #0057b7;
             color: #fff;
-            padding: 1rem 0;
-            text-align: center;
             position: fixed;
-            width: 100%;
             top: 0;
             left: 0;
-            z-index: 1000;
+            bottom: 0;
+            overflow-y: auto;
+            padding: 1rem;
         }
 
-        nav ul {
+        .sidebar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .sidebar nav ul {
             list-style: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
         }
 
-        nav ul li {
-            margin: 0 1rem;
+        .sidebar nav ul li {
+            margin: 1rem 0;
         }
 
-        nav ul li a {
+        .sidebar nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .container {
-            width: 80%;
-            margin: 4rem auto 0 auto;
-            overflow: hidden;
+        .content {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+            padding: 1rem;
         }
 
         .hero {
@@ -127,59 +121,7 @@
     </style>
 </head>
 <body>
-
-
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to SLUG</h1>
-            <p>Promoting the use of Linux and open-source software in Southend-on-Sea and surrounding areas.</p>
-        </div>
-    </section>
-
-    <section id="about" class="container">
-        <h2>About Us</h2>
-        <p>The Southend Linux Users Group (SLUG) is a community-driven organization dedicated to promoting the use of Linux and open-source software in Southend-on-Sea and the surrounding areas. We aim to provide a platform for learning, sharing, and connecting with like-minded individuals.</p>
-    </section>
-
-    <section id="events" class="container events-section">
-        <h2>Events</h2>
-        <div class="event">
-            <h3>Monthly Meetup</h3>
-            <p class="date">July 25, 2024</p>
-            <p>Join us for our monthly meetup where we discuss the latest in Linux and open-source software.</p>
-        </div>
-        <div class="event">
-            <h3>Linux Workshop</h3>
-            <p class="date">August 10, 2024</p>
-            <p>Hands-on workshop for beginners and advanced users to learn and share Linux knowledge.</p>
-        </div>
-        <div class="event">
-            <h3>Open Source Hackathon</h3>
-            <p class="date">September 15, 2024</p>
-            <p>Collaborate and contribute to open-source projects in our community hackathon event.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Project One</h3>
-                <p>Description of project one.</p>
-            </div>
-            <div class="project">
-                <h3>Project Two</h3>
-                <p>Description of project two.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>Email: info@southendlug.org</p>
-        <p>Follow us on <a href="https://twitter.com/SouthendLUG">Twitter</a> and <a href="https://facebook.com/SouthendLUG">Facebook</a>.</p>
-    </section>
-    <header>
+    <div class="sidebar">
         <h1>Southend Linux Users Group (SLUG)</h1>
         <nav>
             <ul>
@@ -189,9 +131,63 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <footer>
-        <p>&copy; 2024 Southend Linux Users Group. All rights reserved.</p>
-    </footer>
+    </div>
+
+    <div class="content">
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to SLUG</h1>
+                <p>Promoting the use of Linux and open-source software in Southend-on-Sea and surrounding areas.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>The Southend Linux Users Group (SLUG) is a community-driven organization dedicated to promoting the use of Linux and open-source software in Southend-on-Sea and the surrounding areas. We aim to provide a platform for learning, sharing, and connecting with like-minded individuals.</p>
+        </section>
+
+        <section id="events" class="container events-section">
+            <h2>Events</h2>
+            <div class="event">
+                <h3>Monthly Meetup</h3>
+                <p class="date">July 25, 2024</p>
+                <p>Join us for our monthly meetup where we discuss the latest in Linux and open-source software.</p>
+            </div>
+            <div class="event">
+                <h3>Linux Workshop</h3>
+                <p class="date">August 10, 2024</p>
+                <p>Hands-on workshop for beginners and advanced users to learn and share Linux knowledge.</p>
+            </div>
+            <div class="event">
+                <h3>Open Source Hackathon</h3>
+                <p class="date">September 15, 2024</p>
+                <p>Collaborate and contribute to open-source projects in our community hackathon event.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>Description of project one.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>Description of project two.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@southendlug.org</p>
+            <p>Follow us on <a href="https://twitter.com/SouthendLUG">Twitter</a> and <a href="https://facebook.com/SouthendLUG">Facebook</a>.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Southend Linux Users Group. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
