@@ -48,14 +48,47 @@
             bottom: 0;
             width: 100%;
         }
+        .navbar{
+			background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
     </style>
     
 </head>
 <body>
+    <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">CodingNinja</a> </div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<button><a href="#">SignIn</a></button>
+				<button><a href="#">SignUp</a></button>
+			</ul>
+		</div>
+	</nav>
     <header>
-       <!-- <img src="logo.png" alt="Your Logo" /> -->
+       <!-- <img src="logo.png" alt="Your Logo" /> 
         <h1>Southend Linux Users Group - Seattle</h1>
-    </header>
+    </header> -->
     <div class="container">
         <h2>About Us</h2>
         <p>Welcome to the Southend Linux Users Group (SLUG) in Seattle! <p></p>We are a community of Linux enthusiasts who meet regularly to share knowledge, discuss projects, and promote the use of Linux and open-source software.</p>
