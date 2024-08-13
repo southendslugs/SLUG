@@ -3,27 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Southend Linux Users Group</title>
+    <title>Southend Linux Users Group - Seattle</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+	    Height: 60%;
+	    margin: 20px auto;
+            padding: 15px; 
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #000000;
+        }
+        p {
+            line-height: 1.6;
+        }
+        img {
+ 
+        width: 100px;
+         
+        height: 100px;
+        align: left;
+         
+        }
+	    
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+	    
+        .navbar{
+			background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+	    .title {
+			font-size: 20px; font-weight: 600; color: white; align-items: center;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+       
+    </style>
+    
 </head>
 <body>
-    <aside>
-        <h1>SLUG</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
+    
+    <header>
+        <nav class="navbar" id="top">
+		<div class="navdiv">
+			<div class="logo"><img src=logo.png alt="your logo"> </div>
+			<div class="title"><h1>Southend Linux Users Group - Seattle</h1></div>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a  href="#events">Events</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a  href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- <button><a href="#">SignIn</a></button>
+				<button><a href="#">SignUp</a></button> -->
+			</ul>
+		</div>
+	</nav>
+       <!-- <img src="logo.png" alt="Your Logo" /> 
+        <h1>Southend Linux Users Group - Seattle</h1> -->
+    </header> 
+    <div class="container">
+      	<h1>Southend Linux Users Group - Seattle</h1>
+	<h2 id="about">About SLUG </h2>
+        <p>Welcome to the Southend Linux Users Group (SLUG) in Seattle! 
+	   <p>We are a community of Linux enthusiasts who meet regularly to share knowledge,
+	   discuss projects, <p> and promote the use of Linux andopen-source software.
+	<h2>Mission:</h2>
+	<p>Our mission is to build a welcoming and dynamic community of Linux enthusiasts, 
+	    <p>developers, and professionals. We aim to foster an environment where members can 
+	    <p> share knowledge, collaborate on projects, and develop their skills in Linux and open-source 
+	    <p>software. 
+	<h2>Vision:</h2>
+	<p>Our vision is to be the leading Linux community that inspires and drives innovation and 
+	    <p>collaboration. We envision a future where Linux and open-source software are widely 
+	    <p>adopted and accessible to all, driven by the contributions and advancements of our 
+	    <p>members. 
+        <h2 id ="events">Meetings</h2>
+        <p>Our meetings are held on the first Saturday of every month at 2 PM.<p></p> We gather at the Seattle Central Library, located at 1000 4th Ave, Seattle, WA 98104.</p>
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>The Southend Linux Users Group (SLUG) is a community-driven organization dedicated to promoting the use of Linux and open-source software in Southend-on-Sea and the surrounding areas. We aim to provide a platform for learning, sharing, and connecting with like-minded individuals.</p>
-        </section>
-    </main>
+        <h2 id ="contact">Contact</h2>
+        <p>If you have any questions or would like to join our group, please email us at<p></p> <a href="mailto:contact@southendlug.org">contact@southendlug.org</a>.</p>
+   	<a href="#top">Back to Top</a>
+    </div>
+	
+    <footer>
+        <p>&copy; 2024 Southend Linux Users Group. All rights reserved.</p>
+    </footer>
+	
 </body>
 </html>
